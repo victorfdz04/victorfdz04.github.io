@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <script>
+        function Saludar() {
+            alert('hola ' + document.getElementById('nombre').value + ' ' + document.getElementById ('apellido').value);
+        }
+        
+        function Entrar() {
+            usuario = document.getElementById('usuario').value;
+            contraseña = document.getElementById('contraseña').value;
+
+            if (usuario == 'pepe' && contraseña == 'pikachu') {
+                window.location.href = "joansastre.html";
+            }
+            else {
+                alert('contraseña o usuario erróneos');
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <form action="">
+            <label for="">Usuario</label>
+            <input type="text" name="" id="usuario">
+            <label for="">Contraseña</label>
+            <input type="text" name="" id="contraseña">
+            <button type="button" onclick="Entrar()">Entrar</button>
+    </form>
+</body>
+</html>
